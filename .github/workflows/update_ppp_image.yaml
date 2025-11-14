@@ -12,7 +12,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ Ciheim/HPC-ME/ppp }} # Uses 'owner/repo' as the image name
+  IMAGE_NAME: 'Ciheim/HPC-ME/ppp' # Uses 'owner/repo' as the image name
 
 # 2. Define the jobs to run
 jobs:
