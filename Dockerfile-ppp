@@ -2,7 +2,7 @@ FROM condaforge/mambaforge:24.9.2-0 as builder
 #LABEL maintainer "Ciheim Brown"
 ## Description ##
 # condaforge is based on a stripped down ubuntu image.  We need some extra bits for frerun + fremake
-#####
+######
 
 # Set where the conda installation goes
 ARG conda_location=/app/cylc-flow-tools
