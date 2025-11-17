@@ -8,7 +8,7 @@ on:
     paths:
       - 'Dockerfile-ppp' # Run when Dockerfile is changed
       - 'ppp/runscript.sh' # Run when Runscript is changed
-      - '.github/workflows/update_ppp_image' # Run if the workflow file itself is changed
+      - '.github/workflows/update_ppp_image.yaml' # Run if the workflow file itself is changed
 
 env:
   REGISTRY: ghcr.io
