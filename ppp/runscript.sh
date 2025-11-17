@@ -5,7 +5,7 @@
 ##    - checks for the status of the workflow (before installation step)
 
 # Initialize ppp-setup
-# Set environment variables 
+## Set environment variables 
 export TMPDIR=/mnt/temp
 export HOME=/mnt
 
