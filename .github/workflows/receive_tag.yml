@@ -1,0 +1,17 @@
+on:
+  workflow_call:
+    inputs:
+      new_tag:
+        required: true
+        type: string
+
+jobs:
+  handle_tag:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout target repo
+        uses: actions/checkout@v4
+
+      - name: Receive tag
+        run: |
+          echo "Received new_tag=${{ inputs.new_tag }}"
