@@ -1,12 +1,8 @@
+name: Rebuild Container P
+
 on:
-  workflow_call:
-    inputs:
-      new_tag:
-        required: true
-        type: string
-      old_tag:
-        required: true
-        type: string
+  repository_dispatch:
+    types: [trigger-rebuild]
 
 jobs:
   handle_tag:
@@ -17,5 +13,5 @@ jobs:
 
       - name: Receive tag
         run: |
-          echo "Received new_tag=${{ inputs.new_tag }}"
-          echo "Received old_tag=${{ inputs.old_tag }}"
+          echo "Received new_tag=${{ github.event.client_payload.new_tag }}"
+          echo "Received old_tag=${{ github.event.client_payload.old_tag }}"
